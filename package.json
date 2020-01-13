@@ -1,0 +1,50 @@
+{
+  "name": "eslint-plugin-test-selector-targeting",
+  "version": "0.0.1",
+  "description": "Ensure Good E2E Targets",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Danny Michaelis",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "runner": "jest-runner-eslint",
+    "displayName": "lint",
+    "testMatch": [
+      "<rootDir>/tests/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "jest": "^24.9.0",
+    "jsx-ast-utils": "^2.2.3",
+    "requireindex": "1.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "@babel/register": "^7.8.0",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.8.0",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "jest-runner-eslint": "^0.7.5",
+    "mocha": "^7.0.0",
+    "prettier": "^1.19.1"
+  },
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
